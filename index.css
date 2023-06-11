@@ -1,0 +1,97 @@
+.card{
+    background-color: hsl(30, 38%, 92%);
+    margin: 1rem;
+    width: 100%;
+}
+.card_design{
+    width: 90%;
+    border-radius: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card_article{
+    margin: 1rem;
+}
+
+.big_title, .button_shop{
+    margin-bottom: 1rem;
+}
+.title_space, .barred_price, .resume, .button_shop{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;   
+}
+
+.big_title, .big_price{
+    font-family: 'Fraunces', serif;
+}
+.card_img_mobile, .button_shop{
+    width: 100%;
+}
+.card_img_desktop{
+    display: none;
+}
+.card_img_mobile{
+    border-radius: 1rem 1rem 0 0;
+}
+.button_shop{
+    border: none;
+    background-color: hsl(142, 41%, 47%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.big_title{
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    border: 0;
+    margin: 0;
+}
+.title_space{
+    letter-spacing: 0.3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.resume{
+    line-height: 24px;
+}
+.block_price{
+    display: flex;
+}
+.big_price{
+    color: hsl(142, 37%, 27%);
+    font-size: 2em;
+    margin: 0;
+    margin-right: 2rem;
+   
+}
+.barred_price{
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 1439px)  {
+    .card_design{
+        display: flex;
+        width: 800px;
+        height: 550px;
+    }
+    .card_img_mobile{
+        display: none;
+    }
+    .card_img_desktop{
+        display: block;
+        width: 400px;
+        border-radius: 1rem 0 0 1rem;
+    }
+    .card_article{
+        width: 400px;
+        padding: 2rem; 
+    }
+    .big_title{
+        font-size: 3rem;
+    }
+}
